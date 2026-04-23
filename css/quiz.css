@@ -1,0 +1,62 @@
+#options button {
+  margin: 8px 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+#options button:hover {
+  background: #667eea;
+  color: white;
+}
+
+#progress {
+  margin-top: 10px;
+  font-size: 14px;
+}
+#options button {
+  margin: 8px 0;
+  background: #f4f4f4;
+  color: #333;
+  transition: 0.3s;
+}
+
+/* Hover */
+#options button:hover {
+  background: #667eea;
+  color: white;
+}
+
+/* ✅ Selected (THIS WAS MISSING) */
+#options button.selected {
+  background: #667eea;
+  color: white;
+  font-weight: 500;
+}
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.logout-btn {
+  width: auto;
+  padding: 6px 12px;
+  font-size: 12px;
+  background: #e53e3e;
+}
+
+.logout-btn:hover {
+  background: #c53030;
+}
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.logout-btn {
+  width: auto;
+  padding: 6px 12px;
+  font-size: 12px;
+  background: #e53e3e;
+}
+.logout-btn:hover { background: #c53030; }

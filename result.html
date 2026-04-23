@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Result</h2>
+  <p id="score"></p>
+<div class="top-bar">
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</div>
+  <button onclick="restart()">Restart</button>
+</div>
+
+    <script>
+if (localStorage.getItem("isLoggedIn") !== "true") {
+  window.location.href = "index.html";
+}
+</script>
+<script>
+function logout() {
+  localStorage.removeItem("isLoggedIn");
+  localStorage.removeItem("currentUser");
+  window.location.href = "index.html";
+}
+</script>
+<script src="js/result.js"></script>
+</body>
+</html>
